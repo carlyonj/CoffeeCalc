@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Coffee Dialer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="water_title">Units of water</string>
+    <string name="bean_title">Units of beans</string>
+    <string name="ratio_title">Ratio:</string>
+    <string name="ratio_info">grams of water to grams of beans</string>
+    <string name="coffee_amount_title">Amount of coffee you want \n to make:</string>
+
+</resources>

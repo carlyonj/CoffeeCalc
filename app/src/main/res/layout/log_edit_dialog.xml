@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<RelativeLayout 
+	    android:id="@+id/log_dialog_layout"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_centerInParent="true" >
+	    <EditText 
+	        android:id="@+id/log_edit_title"
+	        android:layout_centerHorizontal="true"
+	        android:layout_alignParentTop="true"
+	    	android:layout_height="80dp"
+	    	android:layout_width="250dp"
+	        android:textSize="24sp"
+	        android:maxLength="50" />
+	    <EditText 
+	        android:id="@+id/log_edit_details"
+	        android:layout_below="@+id/log_edit_title"
+	        android:layout_height="100dp"
+	    	android:layout_width="250dp"
+	        android:textSize="18sp"
+	        android:maxLength="250" />
+	     <TextView
+	        android:id="@+id/log_edit_rating_title"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_below="@id/log_edit_details"
+			android:layout_alignLeft="@id/log_edit_title"
+	        android:text="Set Rating"
+	        android:textSize="18sp" />
+	    <NumberPicker 
+	        android:id="@+id/log_rating_picker"
+	        android:layout_below="@id/log_edit_details"
+	        android:layout_toRightOf="@id/log_edit_rating_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	       </RelativeLayout>
+</RelativeLayout>

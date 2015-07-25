@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<RelativeLayout 
+	    android:id="@+id/timer_selection_layout"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_centerInParent="true" >
+	    <TextView
+	        android:id="@+id/the_dot"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="24sp"
+	        android:text="."
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true" />
+		 <NumberPicker
+	        android:id="@+id/ratio_picker_tens"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toLeftOf="@id/the_dot"/>
+		<NumberPicker
+	        android:id="@+id/ratio_picker_tenths"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@id/the_dot"/>
+    </RelativeLayout>
+</RelativeLayout>

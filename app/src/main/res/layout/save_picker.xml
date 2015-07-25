@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<RelativeLayout 
+	    android:id="@+id/save_picker_layout"
+	    android:layout_height="600dp"
+	    android:layout_width="300dp"
+	    android:layout_centerInParent="true" >
+	    <EditText 
+	        android:id="@+id/save_picker_title"
+	        android:layout_centerHorizontal="true"
+	        android:layout_alignParentTop="true"
+	    	android:layout_height="80dp"
+	    	android:layout_width="250dp"
+	    	android:hint="Set title"
+	        android:textSize="24sp"
+	        android:maxLength="50" />
+	    <EditText 
+	        android:id="@+id/save_picker_details"
+	        android:layout_below="@+id/save_picker_title"
+	        android:layout_height="100dp"
+	    	android:layout_width="250dp"
+	        android:hint="decription..."
+	        android:textSize="18sp"
+	        android:maxLength="250" />
+	    <TextView
+	        android:id="@+id/save_picker_rating_title"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_below="@id/save_picker_details"
+			android:layout_alignLeft="@id/save_picker_title"
+	        android:text="Set Rating"
+	        android:textSize="18sp" />
+	    <NumberPicker 
+	        android:id="@+id/rating_picker"
+	        android:layout_below="@id/save_picker_details"
+	        android:layout_toRightOf="@id/save_picker_rating_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>
